@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../pages/Home";
 import Login from "../Auth/Login";
 import Register from "../Auth/Register";
+import AddProduct from "../dashboard/Admin/AddProduct";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "auth/register",
         Component: Register,
+      },
+      {
+        path: "add-product",
+        element: <AddProduct></AddProduct>,
       },
     ],
   },

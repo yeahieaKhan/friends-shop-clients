@@ -20,14 +20,14 @@ const Register = () => {
       .then((result) => {
         console.log("user registration successfully", result);
 
-        toast.success("🦄 Wow so easy!", {
+        toast.success("User Register successfully!", {
           position: "top-right",
-          autoClose: 1000,
+          autoClose: 2000,
           hideProgressBar: false,
-          closeOnClick: false,
+          closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
-          progress: 1,
+
           theme: "light",
           transition: Bounce,
         });
@@ -39,12 +39,12 @@ const Register = () => {
         console.log("something went wrong", error);
         toast.error("Email in already Exist!", {
           position: "top-right",
-          autoClose: 1000,
+          autoClose: 200,
           hideProgressBar: false,
-          closeOnClick: false,
+          closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
-          progress: 1,
+
           theme: "light",
           transition: Bounce,
         });
@@ -117,7 +117,7 @@ const Register = () => {
                 <div>
                   <a className="link link-hover">Forgot password?</a>
                 </div>
-                <button className="btn btn-neutral mt-4">Register</button>
+                <button className="btn btn-secondary mt-4">Register</button>
               </form>
             </div>
           </div>

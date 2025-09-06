@@ -13,10 +13,10 @@ createRoot(document.getElementById("root")).render(
     <AuthProvider>
       <ToastContainer
         position="top-right"
-        autoClose={1000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
-        closeOnClick={false}
+        closeOnClick
         rtl={false}
         pauseOnFocusLoss
         draggable
